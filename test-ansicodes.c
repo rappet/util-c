@@ -1,11 +1,9 @@
 // Test for ansicodes.h
-// (c)rappet 2016
+// (c)rappet 2016 https://github.com/rappet/util-c
 #include <stdio.h>
 #include "ansicodes.h"
 
-int main() {
-  int i;
-
+void check_modifiers() {
   puts("You have to manually check:");
   puts("Your terminal can not display all of them correctly.");
   putchar(10);
@@ -19,6 +17,8 @@ int main() {
   puts(CONCEAL   "conceal" RESET); // does not work in konsole
   puts(CROSSED   "crossed" RESET); // does not work in konsole
   putchar(10);
+}
+void check_fonts() {
   puts("Fonts:");
   puts(FONT_PRIM "primary font" RESET);
   puts(FONT_1 "Font 1" RESET);
@@ -32,7 +32,9 @@ int main() {
   puts(FONT_9 "Font 9" RESET);
   puts(FRAKTUR "fraktur" RESET); // does not work
   puts(FONT_PRIM);
-
+}
+void check_colors() {
+  int i;
   puts("Colors:");
   puts(FG_BLACK   "black" RESET);
   puts(FG_BLUE    "blue" RESET);
@@ -81,5 +83,9 @@ int main() {
       puts(RESET);
   }
   puts(RESET);
-
+}
+int main() {
+  check_modifiers();
+  check_fonts();
+  check_colors();
 }
