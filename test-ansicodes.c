@@ -36,24 +36,24 @@ void check_fonts() {
 void check_colors() {
   int i;
   puts("Colors:");
-  puts(FG_BLACK   "black" RESET);
-  puts(FG_BLUE    "blue" RESET);
-  puts(FG_GREEN   "green" RESET);
-  puts(FG_RED     "red" RESET);
-  puts(FG_YELLOW  "yellow" RESET);
+  puts(FG_BLACK   "black"   RESET);
+  puts(FG_BLUE    "blue"    RESET);
+  puts(FG_GREEN   "green"   RESET);
+  puts(FG_RED     "red"     RESET);
+  puts(FG_YELLOW  "yellow"  RESET);
   puts(FG_MAGENTA "magenta" RESET);
-  puts(FG_CYAN    "cyan" RESET);
-  puts(FG_WHITE   "white" RESET);
+  puts(FG_CYAN    "cyan"    RESET);
+  puts(FG_WHITE   "white"   RESET);
   puts(FG_DEFAULT "default" RESET);
-  puts(BG_BLACK   "black" RESET);
-  puts(BG_RED     "red" RESET);
-  puts(BG_GREEN   "green" RESET);
-  puts(BG_YELLOW  "yellow" RESET);
-  puts(BG_BLUE    "blue" RESET);
+  puts(BG_BLACK   "black"   RESET);
+  puts(BG_RED     "red"     RESET);
+  puts(BG_GREEN   "green"   RESET);
+  puts(BG_YELLOW  "yellow"  RESET);
+  puts(BG_BLUE    "blue"    RESET);
   puts(BG_MAGENTA "magenta" RESET);
-  puts(BG_CYAN    "cyan" RESET);
+  puts(BG_CYAN    "cyan"    RESET);
 
-  puts(BG_WHITE   "white" RESET);
+  puts(BG_WHITE   "white"   RESET);
   puts(BG_DEFAULT "default" RESET);
   putchar(10);
 
